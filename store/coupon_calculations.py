@@ -1,23 +1,12 @@
 def calculate_price():
-#def calculate_price(price, cash_coupon, percent_coupon):
-#    price = float(input("Input price:"))
-#    cash_coupon = float(input("Input cash coupon amount:"))
-#    percent_coupon = float(input("Input percent coupon:"))
-#    tax = float(round((6/100), 5))
-#    new_price = float(round((price - cash_coupon), 5))
-#    new_price2 = float(round(new_price / (1 + (percent_coupon / 100)), 5))
-#    price2 = int(round(new_price2, 2))
-#    final_price = float(round(new_price2 * (1+tax), 5))
-#    final = int(round(final_price, 2))
-#    return final_price
-
+#def calculate_price(price, cash_coupon, percent_coupon): - does the def need to be this for unittest?
 #try
 #cc_discount_price = price - cash_coupon
 #if cc_discount_price <= 0:
+
     #return 0.00
 
 #percent_value = percent_coupon/100
-
 #if percent_value < 0:
 
 #discounted_value = cc_discount_price * (1 - percent_value)
@@ -28,30 +17,23 @@ def calculate_price():
     #print('something else happened')
 #(not needed)finally:
 
-
-#return discounted_value
-#return((price - cash_coupon) * (1 - percent_coupon/100))
-
-   # def price():
     price = int(input("Input price:"))
-  #      return price
- #   def cash_coupon():
+  #      return price - do I need to return the 'price' so it speaks to unittest?
     cash_coupon = int(input("Input cash coupon amount:"))
-#        return cash_coupon
-#    def percent_coupon():
+#        return cash_coupon - do I need to return the 'coupon' amount for unittest?
     percent_coupon = int(input("Input percent coupon:"))
-#        return percent_coupon
+#        return percent_coupon - same with % coupon?
     tax = 6/100
     new_price = (price - cash_coupon)
     new_price2 = (new_price / (1 + (percent_coupon / 100)))
-#    price2 = int(round(new_price2, 2))
+#    new_price2 = int(round(new_price2, 2)) - do I need to return the calculated price for unittest?
     final_price = new_price2 * (1+tax)
 #    final = int(round(final_price, 2))
     return final_price
 
 if __name__ == '__main__':
 
-#    calculate_price()
+
     ship1 = 5.95
     ship2 = 7.95
     ship3 = 11.95
